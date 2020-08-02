@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:background="#fffafa"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/link"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:clickable="true"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/border3"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="FB DOWNLOADER"
+                android:textColor="@color/color2"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@color/color2"
+                android:clickable="true"
+                android:src="@drawable/ic_close_black_24dp" />
+
+
+        </LinearLayout>
+        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:visibility="visible"
+            android:background="@color/color5"
+            android:orientation="horizontal">
+
+            <SearchView
+                android:id="@+id/url"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:goIcon="@drawable/ic_link_black_24dp"
+                android:queryHint="Paste video link here"
+                android:searchHintIcon="@drawable/ic_link_black_24dp"
+                android:searchIcon="@drawable/ic_send_black_24dp"
+                android:closeIcon="@drawable/ic_close_black_24dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="35dp"
+                android:visibility="gone"
+                android:clickable="true"
+                android:background="@drawable/logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tabs_section"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"
+                android:elevation="5dp" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/video_section"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="@color/color4"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <WebView
+                    android:id="@+id/web"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        </LinearLayout>
+
+     <!--   <include layout="@layout/ads" />-->
+
+    </LinearLayout>
+</TabHost>
