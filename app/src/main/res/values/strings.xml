@@ -2,4 +2,19 @@
     <string name="app_name">FBVD</string>
     <string name="app_about">Facebook Video Downloader</string>
     <string name="action_settings">Settings</string>
+
+
+    <string name="download_enabled">You can download videos now..</string>
+    <string name="need_storage_permission">You must enable the external storage permission to download the video.</string>
+    <string name="invalid_link">invalid link</string>
+    <string name="no_internet">No Internet connection!</string>
+
+    <!--about layout-->
+    <string name="share"> Share With Friends</string>
+    <string name="rate"> Rate On Google Play</string>
+    <string name="contact"> Contact Developer</string>
+    <string name="version">Version</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

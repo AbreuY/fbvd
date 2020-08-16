@@ -40,11 +40,11 @@
             <TextView
                 android:id="@+id/app_version"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="14dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
                 android:gravity="center"
-                android:text="Version"
+                android:text="@string/version"
                 android:textColor="@color/color4"
                 android:textSize="14sp" />
 
@@ -85,7 +85,7 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
                 android:gravity="left|center"
-                android:text="Rate On Google Play"
+                android:text="@string/rate"
                 android:textColor="@color/color4"
                 android:textSize="15sp"
                 android:textStyle="bold" />
@@ -136,7 +136,7 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
                 android:gravity="left|center"
-                android:text=" Share With Friends"
+                android:text="@string/share"
                 android:textColor="@color/color4"
                 android:textSize="15sp"
                 android:textStyle="bold" />
@@ -187,7 +187,7 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
                 android:gravity="left|center"
-                android:text=" Contact Developer"
+                android:text="@string/contact"
                 android:textColor="@color/color4"
                 android:textSize="15sp"
                 android:textStyle="bold" />

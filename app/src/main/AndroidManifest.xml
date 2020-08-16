@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="fbvd.ma7moud3ly.com.HowTo"
+            android:name="fbvd.ma7moud3ly.com.VideoActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -33,7 +33,27 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="fbvd.ma7moud3ly.com.About"
+            android:name="fbvd.ma7moud3ly.com.HowToActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fbvd.ma7moud3ly.com.HistoryActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fbvd.ma7moud3ly.com.AboutActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

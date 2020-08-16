@@ -11,7 +11,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 
-public class MyRequests {
+public class GetRequests {
 
     public static boolean isConnected(Context c) {
         try {
@@ -24,7 +24,7 @@ public class MyRequests {
     }
 
     // HTTP GET request
-    public String sendGet(String url) {
+    public String get(String url) {
         URL obj;
         try {
             obj = new URL(url);
@@ -38,7 +38,6 @@ public class MyRequests {
             con.setRequestMethod("GET");
             con.setRequestProperty("User-Agent", "Mozilla Firefox");
 
-            int responseCode = con.getResponseCode();
             int status = con.getResponseCode();
             BufferedInputStream in;
             if (status >= 400) {

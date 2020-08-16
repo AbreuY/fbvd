@@ -11,14 +11,14 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-public class About extends AppCompatActivity {
+public class AboutActivity extends AppCompatActivity {
     TextView version;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.about);
+        setContentView(R.layout.about_layout);
 
         findViewById(R.id.rate).setOnClickListener(view -> rate());
         findViewById(R.id.share).setOnClickListener(view -> share());

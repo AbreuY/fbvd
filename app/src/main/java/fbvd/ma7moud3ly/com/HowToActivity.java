@@ -14,7 +14,7 @@ import androidx.viewpager.widget.ViewPager;
 import me.relex.circleindicator.CircleIndicator;
 
 
-public class HowTo extends AppCompatActivity {
+public class HowToActivity extends AppCompatActivity {
     private ViewPager slider;
     private Integer[] imgs;
     private String[] descriptions;
