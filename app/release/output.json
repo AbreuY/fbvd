@@ -1,1 +1,33 @@
-[{"outputType":{"type":"APK"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":2},"path":"app-release.apk","properties":{"packageId":"avd.ma7moud3ly.com","split":"","minSdkVersion":"16"}}]
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "fbvd.ma7moud3ly.com",
+  "variantName": "processReleaseResources",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "properties": [
+        {
+          "key": "packageId",
+          "value": "fbvd.ma7moud3ly.com"
+        },
+        {
+          "key": "split",
+          "value": ""
+        },
+        {
+          "key": "minSdkVersion",
+          "value": "19"
+        }
+      ],
+      "versionCode": 3,
+      "versionName": "2.0",
+      "enabled": true,
+      "outputFile": "app-release.apk"
+    }
+  ]
+}
