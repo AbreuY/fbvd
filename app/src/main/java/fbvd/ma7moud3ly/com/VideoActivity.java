@@ -90,15 +90,17 @@ public class VideoActivity extends AppCompatActivity {
 
     //extract facebook video from facebook provided link
     private void extract_video(String link) {
+
+        //return if no internet connection
+        if (!GetRequests.isConnected(this)) {
+            Toast.makeText(this, getResources().getString(R.string.no_internet), Toast.LENGTH_LONG).show();
+            finish();
+            return;
+        }
         List<String> list = uson.getList();
         if (!list.contains(link)) {
             list.add(link);
             uson.putList(list);
-        }
-        //return if no internet connection
-        if (!GetRequests.isConnected(this)) {
-            Toast.makeText(this, getResources().getString(R.string.no_internet), Toast.LENGTH_LONG).show();
-            return;
         }
 
         title.setText("");
